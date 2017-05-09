@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="MyApp">
+<head>
+    <title>My App</title>
+</head>
+<body ng-controller="MoviesController as controller">
+    <ul>
+        <li ng-repeat="movie in controller.movies">
+            {{movie.title}}
+        </li>
+    </ul>
+
+    <script src="testapp\bower_components\angular\angular.min.js"></script>
+    <script src="testapp\ngApp\services\services.js"></script>
+    <script src="testapp\ngApp\controllers\controllers.js"></script>
+
+</body>
+</html>
